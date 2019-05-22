@@ -1,0 +1,91 @@
+\documentclass[12pt]{book}
+
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath,amsthm,amssymb,titling}
+
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\nn}{\mathbb{N}}
+\newcommand{\zz}{\mathbb{Z}}
+
+\newcommand{\subtitle}[1]{%
+	\posttitle{%
+		\par\end{center}
+	\begin{center}\large#1\end{center}
+	\vskip0.5em}%
+}
+
+\title{Topology Preliminary Exam Study Guide}
+\subtitle{NDSU}
+\author{James (Jimmy) Thorne}
+\date{\today}
+
+\theoremstyle{definition}
+\newtheorem{define}{Definition}
+\newtheorem{ex}{Exercise}
+
+
+\begin{document}
+	\maketitle
+	
+	\chapter{Point-Set Topology}
+	Since Point-Set Topology is a prerequisite, this section will strictly be
+	problems that provide utility to solve problems in Algebraic and Differential
+	topology.
+	\begin{ex}
+		If $f:X\to Y$ is continuous and $Y$ is both compact and Hausdorff, then the
+		graph
+		
+		$$G = \{ (x,y) \in X\times Y | y=f(x) \}$$
+		is closed in $X\times Y$.
+	\end{ex}
+
+	\begin{ex}
+		Let $f:X\to Y$ be a continuous bijection.  If $X$ is compact and $Y$ is 
+		Hausdorff, then $f$ is a homeomorphism.
+	\end{ex}
+
+	\begin{ex}[Spring 19]
+		Give an example of a space that is connected, but not locally path
+		connected.  Give an example of a topological space that is  locally
+		path connected but not locally simply connected
+	\end{ex}
+
+	\begin{ex}[Spring 18]
+		 Let $X$ be a Hausdorff topological space.  Show that there exists a compact topological space $Y$ such that $X$ is a subspace of Y and $Y\backslash X$ consists of a single point.
+	\end{ex}
+	
+	\begin{ex}[Spring 18]
+		For distinct positive integers $m$ and $n$, prove that $R^m$ is not homeomorphic to $R^n$.
+	\end{ex}
+
+	\begin{ex}[Fall 17]
+		A  topological  space $X$ is  called locally  Euclidean if for  some
+		  fixed $n\leq 1$  and  for  all $p\in X$ there  exists  an  open
+		   set $U$ containing $p$ such  that $U$ is  homeomorphic  to $R^n$.   Is
+		   it  true  that  a locally Euclidean second countable space is Hausdorff?
+	\end{ex}
+
+	\begin{ex}[Fall 17]
+		Let $X$ be  a  Hausdorff  topological  space  and $U$ an open subset of $X$.
+		Show that if $\{K_n | n\in \nn \}$ is a nested sequence of compact subsets
+		of $X$ with $\displaystyle\bigcap_{n=1}^{\infty}K_n\subset U$, then there
+		 exists $n \in \nn $ such that $K_n\subset U$.
+	\end{ex}
+
+	\begin{ex}[Spring 17]
+		Let $X$ be a Hausdorff topological space and let $F,K\subset X$ be disjoint
+		 compact subsets.  Show that there exist open sets $U,V\subset X$ such
+		  that $F\subset U,K\subset V$ and $U\cap V=\emptyset$.
+	\end{ex}
+
+	\begin{ex}[Spring 16]
+		Prove the following.(a)  A closed subset of a compact topological space is compact.(b)  A compact subset of a Hausdorff topological space is closed.
+	\end{ex}
+
+	\begin{ex}[June 14]
+		Find an example of a topological space which is of class a)T0 but not T1. b)T 1but not T2. c)T2 but not T3. d)T3 but not T4.
+	\end{ex}
+	\chapter{Algebraic Topology}
+	
+\end{document}

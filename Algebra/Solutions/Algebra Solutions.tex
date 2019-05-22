@@ -1,0 +1,46 @@
+\documentclass[12pt]{book}
+
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\nn}{\mathbb{N}}
+\newcommand{\zz}{\mathbb{Z}}
+
+\newtheorem{ex}{Exercise}
+
+\title{Solutions to the Algebra Preliminary Exam Study Guide}
+\author{James (Jimmy) Thorne}
+\begin{document}
+	\maketitle
+	
+	\begin{ex}
+		An element is called idempotent if $x^2=x$.  Show that if each element $a$
+		in the ring $R$
+		is idempotent, then $R$ is a commutative ring.  (Note: $R$ is called a
+		boolean ring)
+	\end{ex}
+
+	\begin{proof}
+		Let $x,y\in R$.
+		
+		\begin{align}
+			(x+y)^2 &= (x+y)(x+y) \\
+			&= x^2 + xy + yx + y^2 \\
+			&= x + xy + yx +y 
+		\end{align}
+		
+		We also have the $(x+y)^2=x+y \, (4)$ by the idempotent property,
+		so we combine (3) and (4)  to get
+		
+		$$x + y = x + xy + yx + y \implies 0 = xy + yx \implies -xy = yx $$
+		
+		By squaring both sides of this last expression we get
+		
+		$$xy = yx$$
+		
+		
+	\end{proof}
+	
+\end{document}

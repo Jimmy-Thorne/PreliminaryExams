@@ -1,0 +1,68 @@
+\documentclass[12pt]{book}
+
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath,amsthm,amssymb,titling}
+
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\nn}{\mathbb{N}}
+\newcommand{\zz}{\mathbb{Z}}
+
+\newcommand{\subtitle}[1]{%
+	\posttitle{%
+		\par\end{center}
+	\begin{center}\large#1\end{center}
+	\vskip0.5em}%
+}
+
+\title{Algebra Preliminary Exam Study Guide}
+\subtitle{NDSU}
+\author{James (Jimmy) Thorne}
+\date{\today}
+
+\theoremstyle{definition}
+\newtheorem{define}{Definition}
+\newtheorem{ex}{Exercise}
+
+
+\begin{document}
+	
+	\maketitle
+	
+	\chapter{Rings}
+	
+	\begin{define}
+		A \underline{Ring} R is a set together with two binary operations $+$ and $\times$
+		such that
+		\begin{enumerate}
+			\item $(R,+)$ is an abelian group,
+			\item $\times$ is associative
+			\item $(a+b)\times c = (a\times c) + (b\times c)$ for all $a,b,c\in R$.	
+		\end{enumerate}
+	\end{define}
+
+	\begin{define}
+		A ring is \underline{commutative ring} if $\times$ is commutative and is said to 
+		\underline{have identity} if there is a $1\in R$ such that 
+		
+		$$ 1\times a = a \times 1 =a \hspace{0.5in} \mbox{for all } a\in R$$
+	\end{define}
+	
+	\begin{ex}
+		An element is called idempotent if $x^2=x$.  Show that if each element $a$
+		in the ring $R$
+		is idempotent, then $R$ is a commutative ring.  (Note: $R$ is called a
+		boolean ring)
+	\end{ex}
+
+	We can add more structure to the rings with the following definition.
+	
+	\begin{define}
+		Let $R$ be a ring with identity 1, where $\neq 0$.  We say $R$ is a 
+		\underline{division ring} if every nonzero element $a\in R$ has a
+		multiplicative inverse.  If $R$ is commutative, then we say $R$ is a 
+		\underline{field}.
+	\end{define}
+
+	
+\end{document}
