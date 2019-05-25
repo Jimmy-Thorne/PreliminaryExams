@@ -1,0 +1,6 @@
+# Don't track these files
+# Compiled Files
+*.log
+*.aux
+*.pdf
+*.synctex*
